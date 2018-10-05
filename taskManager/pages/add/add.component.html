@@ -1,0 +1,19 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Task Manager
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-fab top right>
+        <button ion-fab mini (click) = "dismiss()">
+            <ion-icon name = "arrow-back"></ion-icon>
+        </button>
+    </ion-fab>
+    <ion-item>
+        <ion-input [(ngModel)]= "todo" placeholder="Add your task"></ion-input>
+    </ion-item>
+    <button ion-button round (click) = "add()" >ADD</button>
+</ion-content>
